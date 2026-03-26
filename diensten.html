@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NorthLab Diensten - App Development, Web Development, AI Engineering">
+  <title>NorthLab - Diensten</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/images/logo.svg" alt="NorthLab Logo" width="40" height="40">
+        <span>NorthLab</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" data-nl="Home" data-en="Home">Home</a></li>
+        <li><a href="/diensten.html" class="active" data-nl="Diensten" data-en="Services">Diensten</a></li>
+        <li><a href="/contact.html" data-nl="Contact" data-en="Contact">Contact</a></li>
+        <li>
+          <button class="lang-btn" id="langToggle" aria-label="Taal wisselen">
+            <span class="lang-active">NL</span> / <span class="lang-inactive">EN</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <h1 class="fade-up" data-nl="Onze Diensten" data-en="Our Services">Onze Diensten</h1>
+      <p class="fade-up delay-1" data-nl="Wij bieden een breed scala aan softwareoplossingen" data-en="We offer a wide range of software solutions">Wij bieden een breed scala aan softwareoplossingen</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        <!-- Web Development -->
+        <div class="service-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3 data-nl="Webontwikkeling" data-en="Web Development">Webontwikkeling</h3>
+          <p data-nl="Moderne, responsieve websites en webapplicaties gebouwd met de nieuwste technologieën. Van een eenvoudige bedrijfswebsite tot complexe platforms — wij leveren kwaliteit." data-en="Modern, responsive websites and web applications built with the latest technologies. From a simple business website to complex platforms — we deliver quality.">Moderne, responsieve websites en webapplicaties gebouwd met de nieuwste technologieën. Van een eenvoudige bedrijfswebsite tot complexe platforms — wij leveren kwaliteit.</p>
+          <ul class="service-features">
+            <li data-nl="Responsief ontwerp" data-en="Responsive design">Responsief ontwerp</li>
+            <li data-nl="Progressive Web Apps" data-en="Progressive Web Apps">Progressive Web Apps</li>
+            <li data-nl="E-commerce oplossingen" data-en="E-commerce solutions">E-commerce oplossingen</li>
+            <li data-nl="CMS-integratie" data-en="CMS integration">CMS-integratie</li>
+          </ul>
+        </div>
+
+        <!-- App Development -->
+        <div class="service-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          </div>
+          <h3 data-nl="App Ontwikkeling" data-en="App Development">App Ontwikkeling</h3>
+          <p data-nl="Gebruiksvriendelijke mobiele applicaties voor iOS en Android. Wij bouwen apps die intuïtief aanvoelen en betrouwbaar presteren." data-en="User-friendly mobile applications for iOS and Android. We build apps that feel intuitive and perform reliably.">Gebruiksvriendelijke mobiele applicaties voor iOS en Android. Wij bouwen apps die intuïtief aanvoelen en betrouwbaar presteren.</p>
+          <ul class="service-features">
+            <li data-nl="Cross-platform ontwikkeling" data-en="Cross-platform development">Cross-platform ontwikkeling</li>
+            <li data-nl="Native iOS & Android" data-en="Native iOS & Android">Native iOS & Android</li>
+            <li data-nl="UI/UX ontwerp" data-en="UI/UX design">UI/UX ontwerp</li>
+            <li data-nl="App Store publicatie" data-en="App Store publishing">App Store publicatie</li>
+          </ul>
+        </div>
+
+        <!-- AI Engineering -->
+        <div class="service-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+          </div>
+          <h3 data-nl="AI Engineering" data-en="AI Engineering">AI Engineering</h3>
+          <p data-nl="Integratie van kunstmatige intelligentie in uw bedrijfsprocessen. Van chatbots tot data-analyse — wij maken AI toegankelijk en waardevol voor uw organisatie." data-en="Integration of artificial intelligence into your business processes. From chatbots to data analysis — we make AI accessible and valuable for your organization.">Integratie van kunstmatige intelligentie in uw bedrijfsprocessen. Van chatbots tot data-analyse — wij maken AI toegankelijk en waardevol voor uw organisatie.</p>
+          <ul class="service-features">
+            <li data-nl="Machine Learning modellen" data-en="Machine Learning models">Machine Learning modellen</li>
+            <li data-nl="Natuurlijke taalverwerking" data-en="Natural Language Processing">Natuurlijke taalverwerking</li>
+            <li data-nl="Procesautomatisering" data-en="Process automation">Procesautomatisering</li>
+            <li data-nl="Data-analyse & inzichten" data-en="Data analysis & insights">Data-analyse & inzichten</li>
+          </ul>
+        </div>
+
+        <!-- API Development -->
+        <div class="service-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+          </div>
+          <h3 data-nl="API & Backend" data-en="API & Backend">API & Backend</h3>
+          <p data-nl="Robuuste backend-systemen en API's die de ruggengraat vormen van uw digitale producten. Schaalbaar, veilig en goed gedocumenteerd." data-en="Robust backend systems and APIs that form the backbone of your digital products. Scalable, secure, and well-documented.">Robuuste backend-systemen en API's die de ruggengraat vormen van uw digitale producten. Schaalbaar, veilig en goed gedocumenteerd.</p>
+          <ul class="service-features">
+            <li data-nl="RESTful & GraphQL API's" data-en="RESTful & GraphQL APIs">RESTful & GraphQL API's</li>
+            <li data-nl="Cloud-architectuur" data-en="Cloud architecture">Cloud-architectuur</li>
+            <li data-nl="Database-ontwerp" data-en="Database design">Database-ontwerp</li>
+            <li data-nl="Beveiligingsaudits" data-en="Security audits">Beveiligingsaudits</li>
+          </ul>
+        </div>
+
+        <!-- Consulting -->
+        <div class="service-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <h3 data-nl="Technisch Advies" data-en="Technical Consulting">Technisch Advies</h3>
+          <p data-nl="Strategisch advies over technologiekeuzes, architectuur en digitale transformatie. Wij helpen u de juiste beslissingen te nemen voor uw project." data-en="Strategic advice on technology choices, architecture, and digital transformation. We help you make the right decisions for your project.">Strategisch advies over technologiekeuzes, architectuur en digitale transformatie. Wij helpen u de juiste beslissingen te nemen voor uw project.</p>
+          <ul class="service-features">
+            <li data-nl="Technologie-roadmaps" data-en="Technology roadmaps">Technologie-roadmaps</li>
+            <li data-nl="Code reviews" data-en="Code reviews">Code reviews</li>
+            <li data-nl="Architectuurontwerp" data-en="Architecture design">Architectuurontwerp</li>
+            <li data-nl="Team coaching" data-en="Team coaching">Team coaching</li>
+          </ul>
+        </div>
+
+        <!-- Maintenance -->
+        <div class="service-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3 data-nl="Onderhoud & Support" data-en="Maintenance & Support">Onderhoud & Support</h3>
+          <p data-nl="Doorlopend onderhoud en technische ondersteuning voor uw applicaties. Wij zorgen ervoor dat uw software altijd up-to-date en veilig is." data-en="Ongoing maintenance and technical support for your applications. We ensure your software is always up-to-date and secure.">Doorlopend onderhoud en technische ondersteuning voor uw applicaties. Wij zorgen ervoor dat uw software altijd up-to-date en veilig is.</p>
+          <ul class="service-features">
+            <li data-nl="24/7 monitoring" data-en="24/7 monitoring">24/7 monitoring</li>
+            <li data-nl="Prestatie-optimalisatie" data-en="Performance optimization">Prestatie-optimalisatie</li>
+            <li data-nl="Beveiligingsupdates" data-en="Security updates">Beveiligingsupdates</li>
+            <li data-nl="SLA-overeenkomsten" data-en="SLA agreements">SLA-overeenkomsten</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section section-accent">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <h2 data-nl="Onze Werkwijze" data-en="Our Process">Onze Werkwijze</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="process-grid">
+        <div class="process-step scroll-reveal">
+          <div class="process-number">01</div>
+          <h3 data-nl="Kennismaking" data-en="Discovery">Kennismaking</h3>
+          <p data-nl="Wij luisteren naar uw wensen en brengen de vereisten in kaart." data-en="We listen to your needs and map out the requirements.">Wij luisteren naar uw wensen en brengen de vereisten in kaart.</p>
+        </div>
+        <div class="process-step scroll-reveal">
+          <div class="process-number">02</div>
+          <h3 data-nl="Ontwerp" data-en="Design">Ontwerp</h3>
+          <p data-nl="We ontwerpen de architectuur en het visuele ontwerp van uw product." data-en="We design the architecture and visual design of your product.">We ontwerpen de architectuur en het visuele ontwerp van uw product.</p>
+        </div>
+        <div class="process-step scroll-reveal">
+          <div class="process-number">03</div>
+          <h3 data-nl="Ontwikkeling" data-en="Development">Ontwikkeling</h3>
+          <p data-nl="Ons team bouwt uw product met de beste technologieën en praktijken." data-en="Our team builds your product with the best technologies and practices.">Ons team bouwt uw product met de beste technologieën en praktijken.</p>
+        </div>
+        <div class="process-step scroll-reveal">
+          <div class="process-number">04</div>
+          <h3 data-nl="Oplevering" data-en="Delivery">Oplevering</h3>
+          <p data-nl="Na uitvoerig testen leveren wij een product op dat klaar is voor gebruik." data-en="After thorough testing, we deliver a product ready for use.">Na uitvoerig testen leveren wij een product op dat klaar is voor gebruik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container cta-section scroll-reveal">
+      <h2 data-nl="Interesse in onze diensten?" data-en="Interested in our services?">Interesse in onze diensten?</h2>
+      <p data-nl="Laat ons weten hoe we u kunnen helpen. Wij reageren binnen 24 uur." data-en="Let us know how we can help. We respond within 24 hours.">Laat ons weten hoe we u kunnen helpen. Wij reageren binnen 24 uur.</p>
+      <a href="/contact.html" class="btn btn-primary" data-nl="Neem contact op" data-en="Get in touch">Neem contact op</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo">
+            <img src="/images/logo.svg" alt="NorthLab" width="32" height="32">
+            <span>NorthLab</span>
+          </a>
+          <p data-nl="Van visie naar werkelijkheid" data-en="From vision to reality">Van visie naar werkelijkheid</p>
+        </div>
+        <div class="footer-nav">
+          <h4 data-nl="Navigatie" data-en="Navigation">Navigatie</h4>
+          <ul>
+            <li><a href="/" data-nl="Home" data-en="Home">Home</a></li>
+            <li><a href="/diensten.html" data-nl="Diensten" data-en="Services">Diensten</a></li>
+            <li><a href="/contact.html" data-nl="Contact" data-en="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h4 data-nl="Juridisch" data-en="Legal">Juridisch</h4>
+          <ul>
+            <li><a href="/privacy.html" data-nl="Privacybeleid" data-en="Privacy Policy">Privacybeleid</a></li>
+            <li><a href="/voorwaarden.html" data-nl="Algemene Voorwaarden" data-en="Terms & Conditions">Algemene Voorwaarden</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-nl="Contact" data-en="Contact">Contact</h4>
+          <p><a href="mailto:info@northlab.nl">info@northlab.nl</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NorthLab. <span data-nl="Alle rechten voorbehouden." data-en="All rights reserved.">Alle rechten voorbehouden.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

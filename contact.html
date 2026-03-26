@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neem contact op met NorthLab - Software Development & AI Engineering">
+  <title>NorthLab - Contact</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/images/logo.svg" alt="NorthLab Logo" width="40" height="40">
+        <span>NorthLab</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" data-nl="Home" data-en="Home">Home</a></li>
+        <li><a href="/diensten.html" data-nl="Diensten" data-en="Services">Diensten</a></li>
+        <li><a href="/contact.html" class="active" data-nl="Contact" data-en="Contact">Contact</a></li>
+        <li>
+          <button class="lang-btn" id="langToggle" aria-label="Taal wisselen">
+            <span class="lang-active">NL</span> / <span class="lang-inactive">EN</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <h1 class="fade-up" data-nl="Contact" data-en="Contact">Contact</h1>
+      <p class="fade-up delay-1" data-nl="Wij horen graag van u" data-en="We'd love to hear from you">Wij horen graag van u</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info scroll-reveal">
+          <h2 data-nl="Neem contact op" data-en="Get in touch">Neem contact op</h2>
+          <p data-nl="Heeft u een vraag, een idee voor een project, of wilt u meer weten over onze diensten? Vul het formulier in en wij nemen zo snel mogelijk contact met u op." data-en="Have a question, a project idea, or want to learn more about our services? Fill out the form and we'll get back to you as soon as possible.">Heeft u een vraag, een idee voor een project, of wilt u meer weten over onze diensten? Vul het formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h4>E-mail</h4>
+                <a href="mailto:info@northlab.nl">info@northlab.nl</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4 data-nl="Locatie" data-en="Location">Locatie</h4>
+                <p data-nl="Nederland" data-en="The Netherlands">Nederland</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <h4 data-nl="Reactietijd" data-en="Response time">Reactietijd</h4>
+                <p data-nl="Binnen 24 uur" data-en="Within 24 hours">Binnen 24 uur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form scroll-reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden" aria-hidden="true">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </p>
+          <div class="form-group">
+            <label for="name" data-nl="Naam" data-en="Name">Naam</label>
+            <input type="text" id="name" name="name" required data-nl-placeholder="Uw naam" data-en-placeholder="Your name" placeholder="Uw naam">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required data-nl-placeholder="uw@email.nl" data-en-placeholder="your@email.com" placeholder="uw@email.nl">
+          </div>
+          <div class="form-group">
+            <label for="company" data-nl="Bedrijf (optioneel)" data-en="Company (optional)">Bedrijf (optioneel)</label>
+            <input type="text" id="company" name="company" data-nl-placeholder="Uw bedrijfsnaam" data-en-placeholder="Your company name" placeholder="Uw bedrijfsnaam">
+          </div>
+          <div class="form-group">
+            <label for="subject" data-nl="Onderwerp" data-en="Subject">Onderwerp</label>
+            <select id="subject" name="subject" required>
+              <option value="" data-nl="Selecteer een onderwerp" data-en="Select a subject">Selecteer een onderwerp</option>
+              <option value="webontwikkeling" data-nl="Webontwikkeling" data-en="Web Development">Webontwikkeling</option>
+              <option value="app-ontwikkeling" data-nl="App Ontwikkeling" data-en="App Development">App Ontwikkeling</option>
+              <option value="ai-engineering" data-nl="AI Engineering" data-en="AI Engineering">AI Engineering</option>
+              <option value="advies" data-nl="Technisch Advies" data-en="Technical Consulting">Technisch Advies</option>
+              <option value="overig" data-nl="Overig" data-en="Other">Overig</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-nl="Bericht" data-en="Message">Bericht</label>
+            <textarea id="message" name="message" rows="5" required data-nl-placeholder="Vertel ons over uw project..." data-en-placeholder="Tell us about your project..." placeholder="Vertel ons over uw project..."></textarea>
+          </div>
+          <div class="form-group form-consent">
+            <label class="checkbox-label">
+              <input type="checkbox" name="privacy" required>
+              <span data-nl="Ik ga akkoord met het " data-en="I agree to the ">Ik ga akkoord met het </span><a href="/privacy.html" data-nl="privacybeleid" data-en="privacy policy">privacybeleid</a>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" data-nl="Versturen" data-en="Send message">Versturen</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo">
+            <img src="/images/logo.svg" alt="NorthLab" width="32" height="32">
+            <span>NorthLab</span>
+          </a>
+          <p data-nl="Van visie naar werkelijkheid" data-en="From vision to reality">Van visie naar werkelijkheid</p>
+        </div>
+        <div class="footer-nav">
+          <h4 data-nl="Navigatie" data-en="Navigation">Navigatie</h4>
+          <ul>
+            <li><a href="/" data-nl="Home" data-en="Home">Home</a></li>
+            <li><a href="/diensten.html" data-nl="Diensten" data-en="Services">Diensten</a></li>
+            <li><a href="/contact.html" data-nl="Contact" data-en="Contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h4 data-nl="Juridisch" data-en="Legal">Juridisch</h4>
+          <ul>
+            <li><a href="/privacy.html" data-nl="Privacybeleid" data-en="Privacy Policy">Privacybeleid</a></li>
+            <li><a href="/voorwaarden.html" data-nl="Algemene Voorwaarden" data-en="Terms & Conditions">Algemene Voorwaarden</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-nl="Contact" data-en="Contact">Contact</h4>
+          <p><a href="mailto:info@northlab.nl">info@northlab.nl</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NorthLab. <span data-nl="Alle rechten voorbehouden." data-en="All rights reserved.">Alle rechten voorbehouden.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
