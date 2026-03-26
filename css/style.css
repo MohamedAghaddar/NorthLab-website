@@ -236,99 +236,81 @@ a:hover {
   66% { transform: translate(-20px, 15px) rotate(-1deg); }
 }
 
-/* Floating shapes */
-.hero-shapes {
+/* Hero logo background */
+.hero-logo-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.shape {
-  position: absolute;
+.hero-logo-svg {
+  width: 650px;
+  height: 650px;
+  animation: logoPulse 8s ease-in-out infinite, logoFloat 12s ease-in-out infinite;
+  filter: drop-shadow(0 0 60px rgba(134, 200, 216, 0.3));
 }
 
-.shape-1 {
-  width: 280px;
-  top: 5%;
-  left: -2%;
-  animation: drift1 22s ease-in-out infinite, spin 40s linear infinite;
+.logo-part {
+  transform-origin: 100px 100px;
 }
 
-.shape-2 {
-  width: 200px;
-  top: 15%;
-  right: 5%;
-  animation: drift2 18s ease-in-out infinite, spin 35s linear infinite reverse;
+.logo-top {
+  animation: logoTopMove 6s ease-in-out infinite;
 }
 
-.shape-3 {
-  width: 400px;
-  top: 30%;
-  left: 25%;
-  animation: drift3 30s ease-in-out infinite, spin 50s linear infinite;
+.logo-body {
+  animation: logoBodyMove 7s ease-in-out infinite;
 }
 
-.shape-4 {
-  width: 150px;
-  bottom: 15%;
-  right: 10%;
-  animation: drift1 16s ease-in-out infinite reverse, spin 28s linear infinite;
+.logo-diamond {
+  animation: logoDiamondMove 4s ease-in-out infinite;
 }
 
-.shape-5 {
-  width: 160px;
-  top: 8%;
-  right: 25%;
-  animation: drift2 20s ease-in-out infinite;
+.logo-ring {
+  animation: logoRingSpin 15s linear infinite;
+  transform-origin: 100px 95px;
 }
 
-.shape-6 {
-  width: 320px;
-  bottom: 5%;
-  left: -5%;
-  animation: drift3 25s ease-in-out infinite reverse;
+@keyframes logoPulse {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
 }
 
-.shape-7 {
-  width: 250px;
-  top: 50%;
-  right: -3%;
-  animation: drift1 35s ease-in-out infinite, spin 60s linear infinite reverse;
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.03); }
 }
 
-.shape-8 {
-  width: 120px;
-  bottom: 25%;
-  left: 45%;
-  animation: drift2 14s ease-in-out infinite reverse, spin 22s linear infinite;
+@keyframes logoTopMove {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
-@keyframes drift1 {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(60px, -40px); }
-  50% { transform: translate(20px, 35px); }
-  75% { transform: translate(-40px, -15px); }
+@keyframes logoBodyMove {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(4px) scale(1.02); }
 }
 
-@keyframes drift2 {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(-45px, 30px); }
-  50% { transform: translate(30px, -50px); }
-  75% { transform: translate(50px, 20px); }
+@keyframes logoDiamondMove {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.5; }
+  50% { transform: translateY(6px) scale(1.1); opacity: 0.7; }
 }
 
-@keyframes drift3 {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(35px, 30px); }
-  50% { transform: translate(-30px, -25px); }
-  75% { transform: translate(-45px, 40px); }
+@keyframes logoRingSpin {
+  from { transform: rotate(-15deg); }
+  to { transform: rotate(345deg); }
 }
 
-@keyframes spin {
-  from { rotate: 0deg; }
-  to { rotate: 360deg; }
+@media (max-width: 768px) {
+  .hero-logo-svg {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 .hero-content {
