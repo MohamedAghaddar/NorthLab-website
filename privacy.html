@@ -216,24 +216,5 @@
   </footer>
 
   <script src="/js/main.js"></script>
-  <script>
-    // Legal page language switching
-    (function() {
-      var lang = localStorage.getItem('northlab-lang') || 'nl';
-      function showLegalLang(l) {
-        document.querySelectorAll('.legal-lang-block').forEach(function(block) {
-          block.style.display = block.getAttribute('data-lang') === l ? 'block' : 'none';
-        });
-      }
-      showLegalLang(lang);
-      // Re-apply on toggle
-      var origApply = window.applyLegalLang;
-      var observer = new MutationObserver(function() {
-        var newLang = document.documentElement.lang || 'nl';
-        showLegalLang(newLang);
-      });
-      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-    })();
-  </script>
 </body>
 </html>

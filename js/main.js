@@ -90,6 +90,25 @@
   });
 })();
 
+// ===== Legal Page Language Switching =====
+(function () {
+  function showLegalLang(lang) {
+    var blocks = document.querySelectorAll('.legal-lang-block');
+    if (!blocks.length) return;
+    blocks.forEach(function (block) {
+      block.style.display = block.getAttribute('data-lang') === lang ? 'block' : 'none';
+    });
+  }
+
+  var lang = localStorage.getItem('northlab-lang') || 'nl';
+  showLegalLang(lang);
+
+  var observer = new MutationObserver(function () {
+    showLegalLang(document.documentElement.lang || 'nl');
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+})();
+
 // ===== Scroll Reveal =====
 (function () {
   var reveals = document.querySelectorAll('.scroll-reveal');
