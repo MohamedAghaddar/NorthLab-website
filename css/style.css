@@ -249,10 +249,10 @@ a:hover {
 }
 
 .hero-logo-svg {
-  width: 650px;
-  height: 650px;
-  animation: logoPulse 8s ease-in-out infinite, logoFloat 12s ease-in-out infinite;
-  filter: drop-shadow(0 0 60px rgba(134, 200, 216, 0.3));
+  width: 750px;
+  height: 750px;
+  animation: logoFloat 10s ease-in-out infinite;
+  filter: drop-shadow(0 0 80px rgba(74, 158, 181, 0.25));
 }
 
 .logo-part {
@@ -260,56 +260,61 @@ a:hover {
 }
 
 .logo-top {
-  animation: logoTopMove 6s ease-in-out infinite;
+  animation: logoTopMove 5s ease-in-out infinite;
 }
 
 .logo-body {
-  animation: logoBodyMove 7s ease-in-out infinite;
+  animation: logoBodyMove 6s ease-in-out infinite;
 }
 
 .logo-diamond {
-  animation: logoDiamondMove 4s ease-in-out infinite;
+  animation: logoDiamondMove 3.5s ease-in-out infinite;
 }
 
-.logo-ring {
-  animation: logoRingSpin 15s linear infinite;
+.logo-ring-1 {
+  animation: logoRingSpin1 12s linear infinite;
   transform-origin: 100px 95px;
 }
 
-@keyframes logoPulse {
-  0%, 100% { opacity: 0.85; }
-  50% { opacity: 1; }
+.logo-ring-2 {
+  animation: logoRingSpin2 18s linear infinite reverse;
+  transform-origin: 100px 95px;
 }
 
 @keyframes logoFloat {
   0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-20px) scale(1.03); }
+  50% { transform: translateY(-25px) scale(1.04); }
 }
 
 @keyframes logoTopMove {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  50% { transform: translateY(-10px); }
 }
 
 @keyframes logoBodyMove {
   0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(4px) scale(1.02); }
+  50% { transform: translateY(5px) scale(1.03); }
 }
 
 @keyframes logoDiamondMove {
   0%, 100% { transform: translateY(0) scale(1); opacity: 0.5; }
-  50% { transform: translateY(6px) scale(1.1); opacity: 0.7; }
+  50% { transform: translateY(8px) scale(1.15); opacity: 0.75; }
 }
 
-@keyframes logoRingSpin {
-  from { transform: rotate(-15deg); }
-  to { transform: rotate(345deg); }
+@keyframes logoRingSpin1 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes logoRingSpin2 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @media (max-width: 768px) {
   .hero-logo-svg {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
   }
 }
 
