@@ -80,11 +80,11 @@
           </div>
         </div>
 
-        <form class="contact-form scroll-reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
-          <input type="hidden" name="form-name" value="contact">
-          <p class="hidden" aria-hidden="true">
-            <label>Don't fill this out: <input name="bot-field"></label>
-          </p>
+        <form class="contact-form scroll-reveal" method="POST" action="https://formsubmit.co/info@northlab.nl">
+          <input type="hidden" name="_next" value="https://northlab-website.netlify.app/success.html">
+          <input type="hidden" name="_subject" value="Nieuw contactformulier bericht - NorthLab">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-group">
             <label for="name" data-nl="Naam" data-en="Name">Naam</label>
             <input type="text" id="name" name="name" required data-nl-placeholder="Uw naam" data-en-placeholder="Your name" placeholder="Uw naam">
